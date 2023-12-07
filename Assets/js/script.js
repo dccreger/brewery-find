@@ -20,7 +20,7 @@ searchButton.addEventListener("click", function (event) {
     citySearch +
     "&" +
     selectedType +
-    "&per_page=8";
+    "&per_page=6";
 
   fetch(brewUrl)
     .then(function (response) {
@@ -33,6 +33,6 @@ searchButton.addEventListener("click", function (event) {
       console.log(selectedType);
       localStorage.setItem("breweryData", JSON.stringify(data));
       window.location.href =
-        "file:///Users/chancecreger/Desktop/brewery-find/search-results.html";
+        "file:///Users/chancecreger/Desktop/brewery-find/search-results.html"; //need to change this once deployed.
     });
 });
