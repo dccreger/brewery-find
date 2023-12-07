@@ -12,6 +12,42 @@
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
   <body>
+    <nav class="navbar bg-secondary">
+      <div class="container-fluid">
+        <h1>Brewery Finder</h1>
+        <img
+          src="https://images.unsplash.com/photo-1612528443702-f6741f70a049?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJlZXJ8ZW58MHx8MHx8fDA%3D"
+          alt="Logo"
+          width="200"
+          height="150"
+          class="d-inline-block align-text-center"
+        />
+      </div>
+    </nav>
+    <h1>Search a city to find the local Breweries!!</h1>
+    <form class="container">
+      <div class="input-group flex-nowrap col-12 col-md-=10 text-center mt-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="addon-wrapping"
+        />
+      </div>
+      <select
+        class="form-select col-12 mt-2"
+        aria-label="Default select example"
+      >
+        <option selected>
+          What Type of Brewery would you like to search for?
+        </option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <button type="button" class="btn btn-secondary btn-lg">Search</button>
+    </form>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./Assets/js/script.js"></script>
   </body>
