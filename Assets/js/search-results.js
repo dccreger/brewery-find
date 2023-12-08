@@ -64,6 +64,13 @@ function createBreweryCards(breweries) {
           ", " +
           brewery.postal_code
       );
+      var savedLatLong = JSON.parse(localStorage.getItem("")) || [];
+      savedLatLong.push({
+        latitude: brewery.latitude,
+        longitude: brewery.longitude,
+      });
+
+      localStorage.setItem("breweryLatLong", JSON.stringify(savedLatLong));
       localStorage.setItem("brewery", JSON.stringify(savedAddress));
       window.location.href = "./navigate.html";
       // // Need to add logic to handle the button click directions for tomtom
