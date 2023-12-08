@@ -20,7 +20,7 @@ searchButton.addEventListener("click", function (event) {
     citySearch +
     "&" +
     selectedType +
-    "&per_page=8";
+    "&per_page=6";
 
   fetch(brewUrl)
     .then(function (response) {
