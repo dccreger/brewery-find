@@ -32,7 +32,6 @@ searchButton.addEventListener("click", function (event) {
       console.log(citySearch);
       console.log(selectedType);
       localStorage.setItem("breweryData", JSON.stringify(data));
-      window.location.href =
-        "file:///Users/chancecreger/Desktop/brewery-find/search-results.html";
+      window.location.href = "./search-results.html";
     });
 });

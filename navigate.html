@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Brewery Finder</title>
+    <title>Ale Trail Guide</title>
     <!-- CSS -->
     <!-- Bootstrap call -->
     <link
@@ -23,26 +23,27 @@
       }
     </style>
     <!-- TomTom Searchbar -->
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox.css"
     />
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/3.1.3-public-preview.0/SearchBox-web.js"></script>
-    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script>
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.1.2-public-preview.15/services/services-web.min.js"></script> -->
     <!-- Stylesheet call -->
     <link rel="stylesheet" href="./Assets/css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-secondary">
+    <nav class="navbar">
       <div class="container-fluid">
-        <h1>Brewery Finder</h1>
+        <h1>Ale Trail Guide</h1>
         <img
-          src="https://images.unsplash.com/photo-1612528443702-f6741f70a049?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJlZXJ8ZW58MHx8MHx8fDA%3D"
+          src="./Assets/images/image0.png"
           alt="Logo"
-          width="200"
-          height="150"
+          id="logo"
+          width="60"
+          height="60"
           class="d-inline-block align-text-center"
         />
       </div>
@@ -51,7 +52,22 @@
     <div class="container text-left mx-1">
       <div class="row">
         <!-- Search form -->
-        <div class="col-12 col-lg-3" id="search-field"></div>
+        <div class="col-12 col-lg-3" id="search-field">
+          <form id="search-form">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Your location</label
+              >
+              <input type="Address" class="form-control" id="address-input" />
+              <div id="adress-help" class="form-text">
+                Address, nearest street, etc.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="go-button">
+              Go
+            </button>
+          </form>
+        </div>
         <!-- Map display -->
         <div class="col-12 col-lg-9"><div id="map" class="map"></div></div>
       </div>
@@ -59,9 +75,9 @@
     <!-- JS -->
     <!-- Tomtom script call -->
     <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps-web.min.js"></script>
-    <script src="./Assets/js/tomtom.js"></script>
     <!-- Jquery Call -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- script page call  -->
+    <script src="./Assets/js/tomtom.js"></script>
   </body>
 </html>
