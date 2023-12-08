@@ -6,7 +6,7 @@ var APPLICATION_NAME = "Brew Finder";
 var APPLICATION_VERSION = "1.0";
 tt.setProductInfo(APPLICATION_NAME, APPLICATION_VERSION);
 var denver = { lng: -104.984898, lat: 39.739094 };
-var brewery = { lng: 0, lat: 0 };
+var brewery = "";
 //determines where the map will be centered and zoomed on:
 var map = tt.map({
   key: API_KEY,
@@ -22,13 +22,9 @@ var brewMarker = new tt.Marker()
 //Event Listener
 //Pull latitude and longitude data from search:
 document.addEventListener("DOMContentLoaded", function () {
-  var breweryLatLng = localStorage.getItem("breweryLatLng");
-  if (breweryLatLng) {
-    var parsedData = JSON.parse(storedData);
-    console.log(parsedData);
-    brewery.lat = parsedData.latitude;
-    brewery.lng = parsedData.longitude;
-  }
+  brewery = JSON.parse(localStorage.getItem("brewery"));
+
+  console.log(brewery);
 });
 
 // SEARCH
