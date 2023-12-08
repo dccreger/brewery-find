@@ -54,7 +54,19 @@ function createBreweryCards(breweries) {
     directionsButton.textContent = "Directions";
 
     directionsButton.addEventListener("click", function () {
-      // Need to add logic to handle the button click directions for tomtom
+      var savedAddress = JSON.parse(localStorage.getItem("")) || [];
+      savedAddress.push(
+        brewery.street +
+          " " +
+          brewery.city +
+          ", " +
+          brewery.state_province +
+          ", " +
+          brewery.postal_code
+      );
+      localStorage.setItem("brewery", JSON.stringify(savedAddress));
+      window.location.href = "./navigate.html";
+      // // Need to add logic to handle the button click directions for tomtom
       console.log("Button clicked for " + brewery.name);
     });
 
