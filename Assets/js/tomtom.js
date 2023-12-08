@@ -26,20 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (breweryLatLong) {
     var parsedData = JSON.parse(breweryLatLong);
-    if (Array.isArray(parsedData) && parsedData.length > 0) {
-      var lat = parseFloat(parsedData[0].latitude);
-      var lng = parseFloat(parsedData[0].longitude);
+    var lat = parseFloat(parsedData[0].latitude);
+    var lng = parseFloat(parsedData[0].longitude);
 
-      console.log(parsedData);
-      console.log(lng);
-      console.log(lat);
-      // brewery.lat = parsedData.latitude;
-      // brewery.lng = parsedData.longitude;
+    console.log(parsedData);
+    console.log(lng);
+    console.log(lat);
 
-      map.setCenter([lng, lat]);
+    map.setCenter([lng, lat]);
 
-      brewMarker.setLngLat([lng, lat]);
-    }
+    brewMarker.setLngLat([lng, lat]);
   }
 });
 
