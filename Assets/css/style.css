@@ -15,8 +15,9 @@
 .text-color {
   color: #333333;
 }
-.secondary-color {
-  background-color: #2e8b57;
+nav {
+  background-color: chocolate;
+  color: antiquewhite;
 }
 
 .type-banner {
