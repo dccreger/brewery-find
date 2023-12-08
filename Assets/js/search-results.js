@@ -20,6 +20,10 @@ function createBreweryCards(breweries) {
       "col-md-6",
       "col-lg-3",
       "m-3",
+      "shadow",
+      "p-3",
+      "mb-5",
+      "bg-body-tertiary",
       "rounded"
     );
     var breweryCardBody = document.createElement("div");
@@ -28,30 +32,31 @@ function createBreweryCards(breweries) {
     breweryName.classList.add("card-title", "my-2");
     breweryName.textContent = brewery.name;
     var breweryType = document.createElement("p");
-    breweryType.classList.add("card-text");
+    breweryType.classList.add("card-text", "type-banner");
     breweryType.textContent = "Type: " + brewery["brewery_type"];
     var breweryAddress = document.createElement("p");
     breweryAddress.classList.add("card-text");
-    breweryAddress.textContent =
-      "Address: " +
+    breweryAddress.innerHTML =
       brewery.street +
-      ", " +
+      "<br>" +
       brewery.city +
       ", " +
-      brewery.state_province;
+      brewery.state_province +
+      " " +
+      brewery.postal_code;
+    var websiteButton = document.createElement("a");
+    websiteButton.classList.add("button-color", "btn", "mx-2");
+    websiteButton.textContent = "Website";
+    websiteButton.href = brewery.website_url;
+    websiteButton.target = "_blank";
     var directionsButton = document.createElement("button");
-    directionsButton.classList.add("btn", "btn-primary", "my-1");
+    directionsButton.classList.add("button-color", "btn", "my-2");
     directionsButton.textContent = "Directions";
 
     directionsButton.addEventListener("click", function () {
       // Need to add logic to handle the button click directions for tomtom
       console.log("Button clicked for " + brewery.name);
     });
-    var websiteButton = document.createElement("a");
-    websiteButton.classList.add("btn", "btn-secondary", "mx-1");
-    websiteButton.textContent = "Website";
-    websiteButton.href = brewery.website_url;
-    websiteButton.target = "_blank";
 
     breweryCardBody.appendChild(breweryName);
     breweryCardBody.appendChild(breweryType);
