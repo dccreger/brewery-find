@@ -22,42 +22,51 @@ var brewMarker = new tt.Marker()
 //Event Listener
 //Pull latitude and longitude data from search:
 document.addEventListener("DOMContentLoaded", function () {
-  brewery = JSON.parse(localStorage.getItem("brewery"));
+  var breweryLatLong = localStorage.getItem("breweryLatLong");
 
-  console.log(brewery);
+  if (breweryLatLong) {
+    var parsedData = JSON.parse(breweryLatLong);
+    var lat = parseFloat(parsedData[0].latitude);
+    var lng = parseFloat(parsedData[0].longitude);
+
+    console.log(parsedData);
+    console.log(lng);
+    console.log(lat);
+
+    map.setCenter([lng, lat]);
+
+    brewMarker.setLngLat([lng, lat]);
+  }
 });
 
 // SEARCH
 //
 //Variables
-var searchForm = $("#search-form");
-var goButton = $("#go-button");
-var addressInput = $("#address-input");
-var addressInputText = addressInput.value;
-var fuzzySearch =
-  "https://api.tomtom.com/search/2/search/" +
-  addressInputText +
-  ".json?typeahead=true&limit=1&countrySet=US&extendedPostalCodesFor=Xstr&minFuzzyLevel=1&maxFuzzyLevel=2&idxSet=Addr%2CGeo%2CPAD%2CPOI%2CStr%2CXstr&view=Unified&relatedPois=off&key=p83hoeez5IbC5O5kpydSeHBsRQ2mQwo9";
-//
-//Functions
-//
+// var searchForm = $("#search-form");
+// var goButton = $("#go-button");
+// var addressInput = $("#address-input");
+// var addressInputText = addressInput.value;
+// var fuzzySearch =
+//   "https://api.tomtom.com/search/2/search/" +
+//   addressInputText +
+//   ".json?typeahead=true&limit=1&countrySet=US&extendedPostalCodesFor=Xstr&minFuzzyLevel=1&maxFuzzyLevel=2&idxSet=Addr%2CGeo%2CPAD%2CPOI%2CStr%2CXstr&view=Unified&relatedPois=off&key=p83hoeez5IbC5O5kpydSeHBsRQ2mQwo9";
 
 //
 //Event Listeners
 //
-searchForm.on("submit", function (event) {
-  event.preventDefault();
-  addressInputText = addressInput.value;
-  fuzzySearch =
-    "https://api.tomtom.com/search/2/search/" +
-    addressInputText +
-    ".json?typeahead=true&limit=1&countrySet=US&extendedPostalCodesFor=Xstr&minFuzzyLevel=1&maxFuzzyLevel=2&idxSet=Addr%2CGeo%2CPAD%2CPOI%2CStr%2CXstr&view=Unified&relatedPois=off&key=p83hoeez5IbC5O5kpydSeHBsRQ2mQwo9";
-  console.log(addressInputText);
-  fetch(fuzzySearch)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-    });
-});
+// searchForm.on("submit", function (event) {
+//   event.preventDefault();
+//   addressInputText = addressInput.value;
+//   fuzzySearch =
+//     "https://api.tomtom.com/search/2/search/" +
+//     addressInputText +
+//     ".json?typeahead=true&limit=1&countrySet=US&extendedPostalCodesFor=Xstr&minFuzzyLevel=1&maxFuzzyLevel=2&idxSet=Addr%2CGeo%2CPAD%2CPOI%2CStr%2CXstr&view=Unified&relatedPois=off&key=p83hoeez5IbC5O5kpydSeHBsRQ2mQwo9";
+//   console.log(addressInputText);
+//   fetch(fuzzySearch)
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//     });
+// });
