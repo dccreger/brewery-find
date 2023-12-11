@@ -48,3 +48,7 @@ a:hover {
   background-color: #ffe65b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+#grad {
+  background-image: linear-gradient(#d6ae7b, #eacda3);
+  background-attachment: fixed;
+}
