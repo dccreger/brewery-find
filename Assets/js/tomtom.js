@@ -6,7 +6,7 @@ var APPLICATION_NAME = "Brew Finder";
 var APPLICATION_VERSION = "1.0";
 tt.setProductInfo(APPLICATION_NAME, APPLICATION_VERSION);
 var denver = { lng: -104.984898, lat: 39.739094 };
-var brewery = "";
+var brewery = { lat: 0, lng: 0 };
 //determines where the map will be centered and zoomed on:
 var map = tt.map({
   key: API_KEY,
