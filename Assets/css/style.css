@@ -34,3 +34,17 @@ nav {
   max-width: 100%;
   height: 180px;
 }
+.card:hover {
+  transform: scale(1.04);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #ffe65b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+  background-color: #ffe65b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
