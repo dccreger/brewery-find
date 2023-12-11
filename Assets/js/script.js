@@ -6,7 +6,7 @@ var searchForm = document.getElementById("search-form");
 var brewUrl =
   "https:api.openbrewerydb.org/v1/breweries?by_city=" +
   citySearch +
-  "&" +
+  "&by_dist" +
   selectedType +
   "&per_page=8";
 var searchButton = document.getElementById("search-button");
