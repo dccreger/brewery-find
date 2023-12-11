@@ -34,8 +34,7 @@ searchButton.addEventListener("click", function (event) {
       localStorage.setItem("breweryData", JSON.stringify(data));
 
       if (data.length === 0) {
-        searchButton.setAttribute("data-bs-toggle", "modal");
-        searchButton.setAttribute("data-bs-target", "#modal-box");
+        $("#modal-box").modal("toggle");
       } else {
         window.location.href = "./search-results.html";
       }
