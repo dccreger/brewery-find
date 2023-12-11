@@ -29,3 +29,8 @@ nav {
   text-transform: uppercase;
   background-color: #ffc300;
 }
+.card img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 180px;
+}
