@@ -12,7 +12,7 @@ var map = tt.map({
   key: API_KEY,
   container: "map",
   center: brewery,
-  zoom: 12,
+  zoom: 17,
 });
 //adds a marker to the location of selected brewery:
 var brewMarker = new tt.Marker()
