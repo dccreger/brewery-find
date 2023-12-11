@@ -72,23 +72,14 @@ function createBreweryCards(breweries) {
 
       localStorage.setItem("breweryLatLong", JSON.stringify(savedLatLong));
       localStorage.setItem("brewery", JSON.stringify(savedAddress));
-      window.location.href = "./navigate.html";
+
       // // Need to add logic to handle the button click directions for tomtom
-      console.log("Button clicked for " + brewery.name);
-      if (latitude + longitude === null) {
-        var modal = document.querySelector(".modal");
-        var modalTitle = document.createElement("div");
-        modalTitle.classList.add("modal-header");
-        var modalContent = document.createElement("h5");
-        modalContent.classList.add("modal-title");
-        modalContent.textContent =
-          "Sorry directions are not currently available";
-        var modalBtn = document.createElement("button");
-        modalBtn.classList.add("button-color", "btn", "my-2");
-        modalBtn.textContent = "Close";
-        modal.appendChild(modalTitle);
-        modal.appendChild(modalContent);
-        modal.appendChild(modalBtn);
+      // console.log("Button clicked for " + brewery.name);
+      if (brewery.latitude === null || brewery.longitude === null) {
+        directionsButton.setAttribute("data-bs-toggle", "modal");
+        directionsButton.setAttribute("data-bs-target", "#modal-box");
+      } else {
+        window.location.href = "./navigate.html";
       }
     });
 
