@@ -32,6 +32,12 @@ searchButton.addEventListener("click", function (event) {
       console.log(citySearch);
       console.log(selectedType);
       localStorage.setItem("breweryData", JSON.stringify(data));
-      window.location.href = "./search-results.html";
+
+      if (data.length === 0) {
+        searchButton.setAttribute("data-bs-toggle", "modal");
+        searchButton.setAttribute("data-bs-target", "#modal-box");
+      } else {
+        window.location.href = "./search-results.html";
+      }
     });
 });
