@@ -20,7 +20,7 @@ searchForm.addEventListener("submit", function (event) {
     citySearch +
     "&" +
     selectedType +
-    "&per_page=6";
+    "&per_page=100";
 
   fetch(brewUrl)
     .then(function (response) {
