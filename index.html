@@ -82,7 +82,7 @@
           <option value="by_type=proprietor">Proprietor</option>
           <option value="by_type=closed">Closed</option>
         </select>
-        <button type="button" class="button-color btn my-2" id="search-button">
+        <button type="submit" class="button-color btn my-2" id="search-button">
           Search
         </button>
         <div class="modal" tabindex="-1" id="modal-box">
@@ -113,188 +113,189 @@
           </div>
         </div>
       </form>
-      <section class="d-flex justify-content-evenly m-5">
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=micro"
-        >
-          <img
-            src="https://plus.unsplash.com/premium_photo-1682144497436-aa73f25d40db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm8lMjBicmV3ZXJ5fGVufDB8fDB8fHww"
-            class="card-img-top,"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Micro</h5>
-            <p class="card-text">
-              Most craft breweries. Ex. Samual Adams is still considered a micro
-              brewery.
-            </p>
-            <a href="#" class="btn">Select</a>
+      <section class="container-fluid my-3">
+        <div class="row justify-content-center">
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=micro"
+          >
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682144497436-aa73f25d40db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWljcm8lMjBicmV3ZXJ5fGVufDB8fDB8fHww"
+              class="card-img-top,"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Micro</h5>
+              <p class="card-text">
+                Most craft breweries. Ex. Samual Adams is still considered a
+                micro brewery.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=nano"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1586508320533-d6e75e497df4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c21hbGwlMjBicmV3ZXJ5fGVufDB8fDB8fHww"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Nano</h5>
-            <p class="card-text">
-              An extremely small brewery which typically only distributes
-              locally.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=nano"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1586508320533-d6e75e497df4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c21hbGwlMjBicmV3ZXJ5fGVufDB8fDB8fHww"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nano</h5>
+              <p class="card-text">
+                An extremely small brewery which typically only distributes
+                locally.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=regional"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1622263693061-4b8f4776d2d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlZ2lvbmFsJTIwYnJld2VyeXxlbnwwfHwwfHx8MA%3D%3D"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Regional</h5>
-            <p class="card-text">
-              A regional location of an expanded brewery. Ex. Sierra Nevada’s
-              Asheville, NC location.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=regional"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1622263693061-4b8f4776d2d8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJlZ2lvbmFsJTIwYnJld2VyeXxlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Regional</h5>
+              <p class="card-text">
+                A regional location of an expanded brewery. Ex. Sierra Nevada’s
+                Asheville, NC location.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=brewpub"
-        >
-          <img
-            src="https://media.istockphoto.com/id/969592080/photo/beer-being-taken-from-the-tap-in-brewpub.webp?b=1&s=170667a&w=0&k=20&c=HpYXDV2LK4kOdXQM6Zc0KSW0F_Z08NiiLsAfTxy-i4w="
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Brewpub</h5>
-            <p class="card-text">
-              A beer-focused restaurant or restaurant/bar with a brewery
-              on-premise.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=brewpub"
+          >
+            <img
+              src="https://media.istockphoto.com/id/969592080/photo/beer-being-taken-from-the-tap-in-brewpub.webp?b=1&s=170667a&w=0&k=20&c=HpYXDV2LK4kOdXQM6Zc0KSW0F_Z08NiiLsAfTxy-i4w="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Brewpub</h5>
+              <p class="card-text">
+                A beer-focused restaurant or restaurant/bar with a brewery
+                on-premise.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=large"
-        >
-          <img
-            src="https://plus.unsplash.com/premium_photo-1682144509812-4734c830b486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFyZ2UlMjBicmV3ZXJ5c3xlbnwwfHwwfHx8MA%3D%3D"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Large</h5>
-            <p class="card-text">
-              A very large brewery. Likely not for visitors. Ex. Miller-Coors.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=large"
+          >
+            <img
+              src="https://plus.unsplash.com/premium_photo-1682144509812-4734c830b486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bGFyZ2UlMjBicmV3ZXJ5c3xlbnwwfHwwfHx8MA%3D%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Large</h5>
+              <p class="card-text">
+                A very large brewery. Likely not for visitors. Ex. Miller-Coors.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="d-flex justify-content-evenly m-5">
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=planning"
-        >
-          <img
-            src="https://media.istockphoto.com/id/1458793756/photo/top-view-engineering-working-with-drawings-inspection-and-press-calculator-on-the-office-desk.webp?b=1&s=170667a&w=0&k=20&c=z4I59wvgXbOQ6QhUyifBLSBp-sZ3CiWkhu6ipq0Z0U4="
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Planning</h5>
-            <p class="card-text">
-              A brewery in planning or not yet opened to the public
-            </p>
-            <a href="#" class="btn">Select</a>
+
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=planning"
+          >
+            <img
+              src="https://media.istockphoto.com/id/1458793756/photo/top-view-engineering-working-with-drawings-inspection-and-press-calculator-on-the-office-desk.webp?b=1&s=170667a&w=0&k=20&c=z4I59wvgXbOQ6QhUyifBLSBp-sZ3CiWkhu6ipq0Z0U4="
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Planning</h5>
+              <p class="card-text">
+                A brewery in planning or not yet opened to the public
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=bar"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyfGVufDB8fDB8fHww"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Bar</h5>
-            <p class="card-text">A bar. No brewery equipment on premise.</p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=bar"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyfGVufDB8fDB8fHww"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Bar</h5>
+              <p class="card-text">A bar. No brewery equipment on premise.</p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=contract"
-        >
-          <img
-            src="https://live.staticflickr.com/1518/23306772043_1123cdb83c_b.jpg"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Contract</h5>
-            <p class="card-text">
-              A brewery that uses another brewery’s equipment.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=contract"
+          >
+            <img
+              src="https://live.staticflickr.com/1518/23306772043_1123cdb83c_b.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Contract</h5>
+              <p class="card-text">
+                A brewery that uses another brewery’s equipment.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=proprietor"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1666096172273-a5301474b710?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnJld2VyeSUyMGluY3ViYXRvcnN8ZW58MHx8MHx8fDA%3D"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Proprietor</h5>
-            <p class="card-text">
-              Similar to contract brewing but refers more to a brewery
-              incubator.
-            </p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=proprietor"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1666096172273-a5301474b710?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnJld2VyeSUyMGluY3ViYXRvcnN8ZW58MHx8MHx8fDA%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Proprietor</h5>
+              <p class="card-text">
+                Similar to contract brewing but refers more to a brewery
+                incubator.
+              </p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
-        </div>
-        <div
-          class="card border-dark"
-          style="width: 18rem"
-          data-type="by_type=closed"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1583868161943-29a9ec42256e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNsb3NlZCUyMHNpZ258ZW58MHx8MHx8fDA%3D"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Closed</h5>
-            <p class="card-text">A location which has been closed.</p>
-            <a href="#" class="btn">Select</a>
+          <div
+            class="card border-dark m-2"
+            style="width: 18rem"
+            data-type="by_type=closed"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1583868161943-29a9ec42256e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNsb3NlZCUyMHNpZ258ZW58MHx8MHx8fDA%3D"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Closed</h5>
+              <p class="card-text">A location which has been closed.</p>
+              <a href="#" class="btn">Select</a>
+            </div>
           </div>
         </div>
       </section>

@@ -1,17 +1,17 @@
+var searchForm = document.getElementById("search");
+var searchButton = document.getElementById("search-button");
 var searchField = document.getElementById("search-input");
 var selectField = document.getElementById("type");
 var citySearch = searchField.value;
 var selectedType = selectField.value;
-var searchForm = document.getElementById("search-form");
 var brewUrl =
   "https:api.openbrewerydb.org/v1/breweries?by_city=" +
   citySearch +
   "&by_dist" +
   selectedType +
   "&per_page=8";
-var searchButton = document.getElementById("search-button");
 
-searchButton.addEventListener("click", function (event) {
+searchForm.addEventListener("submit", function (event) {
   event.preventDefault();
   citySearch = searchField.value;
   selectedType = selectField.value;
@@ -27,10 +27,6 @@ searchButton.addEventListener("click", function (event) {
       return response.json();
     })
     .then(function (data) {
-      console.log(brewUrl);
-      console.log(data);
-      console.log(citySearch);
-      console.log(selectedType);
       localStorage.setItem("breweryData", JSON.stringify(data));
 
       if (data.length === 0) {
