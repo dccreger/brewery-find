@@ -1,33 +1,42 @@
-# brewery-find
+# Ale Trail Guide
 
-## User Story
+Welcome to the Ale Trail Guide, a web application for exploring breweries!
 
-As a beer connoisseur
-I want to be able to search the city I am in
-so that I get a list of nearby breweries
+## Overview
 
-## Acceptance Criteria
+The Ale Trail Guide is designed to help users discover and explore different types of breweries in various locations. Whether you're a craft beer enthusiast or looking for a new place to visit, this guide has you covered.
 
-Given I type the name of a city into the searchbar,
+## Features
 
-when I submit the search
-then I am shown a list of cards of the breweries in the city
-then my search is saved in memory
+- **Brewery Types:** Choose from a variety of brewery types, including Microbreweries, Nanobreweries, Regional Breweries, and more.
+- **Search:** Find breweries based on location or specific criteria.
+- **Card View:** Browse breweries results in a card view, each representing a unique brewery.
+- **Interactive Map:** Visualize brewery locations on an interactive map for easy navigation.
 
-When I filter results by type
-Then Breweries of different type are removed from the results
+## Technologies Used
 
-When I select a brewery from the list
-Then I am taken to a page with information about the brewery including:
-. Name
-. Brewery type
-. Address (street, city , postal code)
-. Link to their URL
-. A map to the brewery
+- **HTML:**
+- **CSS:**
+- **JavaScript:**
 
-When I am shown the map
-Then I am told which roads near the brewery have traffic
-Then I am presented with a form to input my location
+## Library's Used
 
-When I submit the form
-Then I am shown the shortest route to the brewery
+- **Bootstrap:**
+- **JQuery:**
+
+## Screenshots
+
+![Ale Trail Guide](./Assets/images/Screenshots/Home_Page.png)
+![Ale Trail Guide](./Assets/images/Screenshots/Search_Results.png)
+![Ale Trail Guide](./Assets/images/Screenshots/Navigation.png)
+
+## Contributors
+
+- **Daniel Goss**
+- **Aaron Lyman**
+- **Gabe Latimer**
+- **Chance Creger**
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
