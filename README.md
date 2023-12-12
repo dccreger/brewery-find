@@ -15,20 +15,27 @@ The Ale Trail Guide is designed to help users discover and explore different typ
 
 ## Technologies Used
 
-- **HTML:**
-- **CSS:**
-- **JavaScript:**
+- **HTML**
+- **CSS**
+- **JavaScript**
 
 ## Library's Used
 
-- **Bootstrap:**
-- **JQuery:**
+- **Bootstrap:** https://getbootstrap.com/docs/5.3/getting-started/introduction/
+- **JQuery:** https://api.jquery.com
+- **OpenBreryDB:** https://www.openbrewerydb.org
+- **Tomtom API:** https://developer.tomtom.com/
 
 ## Screenshots
 
 ![Ale Trail Guide](./Assets/images/Screenshots/Home_Page.png)
 ![Ale Trail Guide](./Assets/images/Screenshots/Search_Results.png)
 ![Ale Trail Guide](./Assets/images/Screenshots/Navigation.png)
+
+## Links
+
+- **Repo:** https://github.com/dccreger/brewery-find
+- **Deployed site:** https://dccreger.github.io/brewery-find/
 
 ## Contributors
 
