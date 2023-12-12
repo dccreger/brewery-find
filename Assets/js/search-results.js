@@ -47,8 +47,17 @@ function createBreweryCards(breweries) {
     var websiteButton = document.createElement("a");
     websiteButton.classList.add("button-color", "btn", "mx-2");
     websiteButton.textContent = "Website";
-    websiteButton.href = brewery.website_url;
-    websiteButton.target = "_blank";
+    websiteButton.addEventListener("click", function () {
+      if (brewery.website_url == null) {
+        var myWebModal = new bootstrap.Modal(
+          document.getElementById("modal-web")
+        );
+        myWebModal.show();
+      } else {
+        websiteButton.href = brewery.website_url;
+        websiteButton.target = "_blank";
+      }
+    });
     var directionsButton = document.createElement("button");
     directionsButton.classList.add("button-color", "btn", "my-2");
     directionsButton.textContent = "Directions";
