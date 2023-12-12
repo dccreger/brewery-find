@@ -63,11 +63,3 @@ a:hover {
   background-image: linear-gradient(#d6ae7b, #eacda3);
   background-attachment: fixed;
 }
-@media screen and (min-width: 600px) {
-  .d-flex {
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 5px;
-    padding: 5px;
-  }
-}
