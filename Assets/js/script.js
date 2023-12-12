@@ -40,3 +40,17 @@ searchButton.addEventListener("click", function (event) {
       }
     });
 });
+
+document.querySelectorAll(".card").forEach(function (card) {
+  card.addEventListener("click", function () {
+    var brewType = card.getAttribute("data-type");
+
+    var selectElement = document.getElementById("type");
+    for (var i = 0; i < selectElement.options.length; i++) {
+      if (selectElement.options[i].value === brewType) {
+        selectElement.selectedIndex = i;
+        break;
+      }
+    }
+  });
+});
