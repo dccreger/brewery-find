@@ -10,8 +10,9 @@ var brewUrl =
   selectedType +
   "&per_page=8";
 var searchButton = document.getElementById("search-button");
+var searchForm = document.getElementById("search");
 
-searchButton.addEventListener("click", function (event) {
+search.addEventListener("submit", function (event) {
   event.preventDefault();
   citySearch = searchField.value;
   selectedType = selectField.value;
